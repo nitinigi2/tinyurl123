@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class ShortUrl {
@@ -14,6 +15,7 @@ public class ShortUrl {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String url;
+	@Lob
 	private String fullUrl; // original url
 	private Date date;
 	
