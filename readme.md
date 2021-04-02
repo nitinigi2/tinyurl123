@@ -13,13 +13,15 @@ To use this project follow following steps:
 
 API - 
 1) POST - /generate
+
 input Type: JSON object
+
 {
   "url" : "https://www.google.com"
 }
 
 Response will have an aliase to access url
 
-2) GET - /
-input path - /alias
+2) GET - /alias
+
 
